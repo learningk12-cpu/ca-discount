@@ -288,6 +288,50 @@
       }
       @media (prefers-reduced-motion: reduce) { .shop-btn { transition: none; } }
       @media (prefers-color-scheme: dark) { .shop-btn { color: #1c1a17; } .shop-btn:hover { color: #1c1a17; } .shop-btn:active { color: #1c1a17; } }
+      /* Post a deal button — silver 3D, turns grey on hover */
+      .hero-cta { margin-top: 22px; display: flex; }
+      .post-deal-btn {
+        display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+        background: linear-gradient(180deg, #ffffff 0%, #ececec 42%, #d3d3d3 55%, #bdbdbd 100%);
+        color: #1c1a17; text-decoration: none;
+        border: 1px solid #9a9a9a;
+        font-weight: 800; font-size: 17px; padding: 15px 34px; border-radius: 12px; min-height: 54px;
+        text-shadow: 0 1px 0 rgba(255,255,255,.75);
+        box-shadow:
+          inset 0 1px 0 rgba(255,255,255,.95),
+          inset 0 -2px 3px rgba(0,0,0,.14),
+          inset 1px 0 0 rgba(255,255,255,.5),
+          inset -1px 0 0 rgba(0,0,0,.06),
+          0 5px 0 #8f8f8f,
+          0 8px 6px rgba(28,26,23,.18),
+          0 12px 18px rgba(28,26,23,.14);
+        transition: transform .08s ease, box-shadow .08s ease, background .25s ease;
+      }
+      .post-deal-btn:hover {
+        background: linear-gradient(180deg, #e8e8e8 0%, #cfcfcf 42%, #a9a9a9 55%, #8a8a8a 100%);
+        transform: translateY(-1px);
+        box-shadow:
+          inset 0 1px 0 rgba(255,255,255,.95),
+          inset 0 -2px 3px rgba(0,0,0,.14),
+          inset 1px 0 0 rgba(255,255,255,.5),
+          inset -1px 0 0 rgba(0,0,0,.06),
+          0 6px 0 #767676,
+          0 9px 5px rgba(28,26,23,.22),
+          0 14px 20px rgba(28,26,23,.17);
+      }
+      .post-deal-btn:active {
+        transform: translateY(4px);
+        box-shadow:
+          inset 0 1px 0 rgba(255,255,255,.8),
+          inset 0 -1px 2px rgba(0,0,0,.12),
+          inset 0 3px 6px rgba(0,0,0,.12),
+          0 1px 0 #767676,
+          0 2px 3px rgba(28,26,23,.2),
+          0 5px 10px rgba(28,26,23,.14);
+      }
+      @media (prefers-reduced-motion: reduce) { .post-deal-btn { transition: none; } }
+      @media (prefers-color-scheme: dark) { .post-deal-btn { color: #1c1a17; } .post-deal-btn:hover { color: #1c1a17; } .post-deal-btn:active { color: #1c1a17; } }
+
       .checked-line { font-size: 12px; color: var(--ink-2); text-align: center; margin-top: 14px; }
       .deal[hidden] { display: none; }
       .empty-msg { display: none; padding: 28px; text-align: center; color: var(--ink-2); font-weight: 600; }
@@ -360,6 +404,9 @@
             <div class="stat"><b>80%</b><span>biggest discount</span></div>
             <div class="stat"><b>3</b><span>Canadian stores</span></div>
             <div class="stat"><b>$600</b><span>biggest saving</span></div>
+          </div>
+          <div class="hero-cta">
+            <a class="post-deal-btn" href="/postadeal">Post a deal</a>
           </div>
         </div>
 
@@ -761,6 +808,7 @@
           <a href="/contact">Contact</a>
           <a href="/about">About</a>
           <a href="/privacy">Privacy</a>
+          <a href="/postadeal">Post a deal</a>
           <a href="https://cadiscount.ca/">cadiscount.ca</a>
         </nav>
       </div>
