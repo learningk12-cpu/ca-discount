@@ -42,7 +42,7 @@
           "name": "Past deals — CA Discount",
           "isPartOf": { "@id": "https://cadiscount.ca/#website" },
           "datePublished": "2026-11-25",
-          "dateModified": "2026-11-25",
+          "dateModified": "2026-11-27",
           "inLanguage": "en-CA"
         }
       ]
@@ -301,6 +301,12 @@
       .deal[hidden] { display: none; }
       .empty-msg { display: none; padding: 28px; text-align: center; color: var(--ink-2); font-weight: 600; }
       .empty-msg.show { display: block; }
+      /* Pagination — Page 1 / Page 2 */
+      .pagination { display: flex; gap: 12px; justify-content: center; align-items: center; flex-wrap: wrap; margin: 26px 0 8px; }
+      .pagination a, .pagination span.page-current { border: 1px solid var(--line); border-radius: 999px; padding: 10px 18px; font-weight: 700; font-size: 15px; text-decoration: none; }
+      .pagination a:hover { border-color: var(--ink-2); }
+      .pagination span.page-current { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+
 
       /* Sections */
       section.block { padding: 38px 0 6px; }
@@ -389,9 +395,146 @@
         <div class="hero">
           <h1>Past deals</h1>
           <p class="hero-lede">Every deal we published, newest first. Prices were correct on the day shown — many of these offers have ended, so always check the store's page before buying. All prices in Canadian dollars.</p>
-          <div class="date-jump"><a href="#day-2026-11-26">November 26</a> <a href="#day-2026-11-25">November 25</a> <a href="#day-2026-11-24">November 24</a> <a href="#day-2026-11-23">November 23</a> <a href="#day-2026-11-22">November 22</a> <a href="#day-2026-11-21">November 21</a> <a href="#day-2026-11-20">November 20</a></div>
+          <div class="date-jump"><a href="#day-2026-11-27">November 27</a> <a href="#day-2026-11-26">November 26</a> <a href="#day-2026-11-25">November 25</a> <a href="#day-2026-11-24">November 24</a> <a href="#day-2026-11-23">November 23</a> <a href="#day-2026-11-22">November 22</a> <a href="#day-2026-11-21">November 21</a> <a href="#day-2026-11-20">November 20</a></div>
         </div>
 
+          <section class="day" id="day-2026-11-27">
+            <h2>Friday, November 27, 2026 <span class="day-count">11 deals</span></h2>
+            <ul class="past-list">
+              <li class="past-row">
+                <span class="store-badge store-bestbuy" aria-hidden="true">BB</span>
+                <div class="past-main">
+                  <a class="past-title" href="https://www.bestbuy.ca/en-ca/product/bobsweep-dustin-robot-vacuum-mop-for-pet-hair-with-self-emptying-dock-lidar-wi-fi-night-black/18246162" target="_blank" rel="nofollow sponsored noopener">bObsweep Dustin Robot Vacuum &amp; Mop for Pet Hair — Night Black</a>
+                  <span class="past-store">Best Buy Canada</span>
+                </div>
+                <div class="past-prices">
+                  <span class="past-now">$199.99</span>
+                  <span class="past-was">was <s>$999.99</s></span>
+                  <span class="past-pct">80% off</span>
+                </div>
+              </li>
+              <li class="past-row">
+                <span class="store-badge store-canadiantire" aria-hidden="true">CT</span>
+                <div class="past-main">
+                  <a class="past-title" href="https://www.canadiantire.ca/en/pdp/bissell-crosswave-hard-floor-expert-corded-wet-dry-vacuum-floor-washer-0437206p.html?rq=Bissell+CrossWave+Hard+Floor+Expert+Corded+Wet+Dry+Vacuum" target="_blank" rel="nofollow sponsored noopener">Bissell CrossWave Hard Floor Expert Corded Wet/Dry Vacuum &amp; Floor Washer</a>
+                  <span class="past-store">Canadian Tire</span>
+                </div>
+                <div class="past-prices">
+                  <span class="past-now">$149.99</span>
+                  <span class="past-was">was <s>$299.99</s></span>
+                  <span class="past-pct">50% off</span>
+                </div>
+              </li>
+              <li class="past-row">
+                <span class="store-badge store-gap" aria-hidden="true">GAP</span>
+                <div class="past-main">
+                  <a class="past-title" href="https://www.gapcanada.ca/browse/product.do?pid=909130023" target="_blank" rel="nofollow sponsored noopener">Kids Recycled Heavyweight Puffer Jacket</a>
+                  <span class="past-store">Gap Canada</span>
+                </div>
+                <div class="past-prices">
+                  <span class="past-now">$67.00</span>
+                  <span class="past-was">was <s>$168.00</s></span>
+                  <span class="past-pct">60% off</span>
+                </div>
+              </li>
+              <li class="past-row">
+                <span class="store-badge store-gap" aria-hidden="true">GAP</span>
+                <div class="past-main">
+                  <a class="past-title" href="https://www.gapcanada.ca/browse/product.do?pid=1181430003" target="_blank" rel="nofollow sponsored noopener">Kids Wool-Blend Peacoat</a>
+                  <span class="past-store">Gap Canada</span>
+                </div>
+                <div class="past-prices">
+                  <span class="past-now">$63.00</span>
+                  <span class="past-was">was <s>$158.00</s></span>
+                  <span class="past-pct">60% off</span>
+                </div>
+              </li>
+              <li class="past-row">
+                <span class="store-badge store-gap" aria-hidden="true">GAP</span>
+                <div class="past-main">
+                  <a class="past-title" href="https://www.gapcanada.ca/browse/product.do?pid=915789043" target="_blank" rel="nofollow sponsored noopener">Kids Sherpa Relaxed Zip Jacket</a>
+                  <span class="past-store">Gap Canada</span>
+                </div>
+                <div class="past-prices">
+                  <span class="past-now">$35.00</span>
+                  <span class="past-was">was <s>$89.95</s></span>
+                  <span class="past-pct">61% off</span>
+                </div>
+              </li>
+              <li class="past-row">
+                <span class="store-badge store-gap" aria-hidden="true">GAP</span>
+                <div class="past-main">
+                  <a class="past-title" href="https://www.gapcanada.ca/browse/product.do?pid=909016043" target="_blank" rel="nofollow sponsored noopener">Kids 100% Cotton Relaxed Shaker Sweater</a>
+                  <span class="past-store">Gap Canada</span>
+                </div>
+                <div class="past-prices">
+                  <span class="past-now">$25.00</span>
+                  <span class="past-was">was <s>$64.95</s></span>
+                  <span class="past-pct">62% off</span>
+                </div>
+              </li>
+              <li class="past-row">
+                <span class="store-badge store-canadiantire" aria-hidden="true">CT</span>
+                <div class="past-main">
+                  <a class="past-title" href="https://www.canadiantire.ca/en/pdp/canvas-pre-lit-led-wireform-birch-tree-christmas-decorations-4-ft-2-pk-1513190p.html" target="_blank" rel="nofollow sponsored noopener">CANVAS Pre-Lit LED Wireform Birch Tree Christmas Decorations, 4-ft, 2-pk</a>
+                  <span class="past-store">Canadian Tire</span>
+                </div>
+                <div class="past-prices">
+                  <span class="past-now">$49.99</span>
+                  <span class="past-was">was <s>$99.99</s></span>
+                  <span class="past-pct">50% off</span>
+                </div>
+              </li>
+              <li class="past-row">
+                <span class="store-badge store-gap" aria-hidden="true">GAP</span>
+                <div class="past-main">
+                  <a class="past-title" href="https://www.gapcanada.ca/browse/product.do?pid=1184966023" target="_blank" rel="nofollow sponsored noopener">Kids CashSoft Rib Beanie</a>
+                  <span class="past-store">Gap Canada</span>
+                </div>
+                <div class="past-prices">
+                  <span class="past-now">$15.00</span>
+                  <span class="past-was">was <s>$39.95</s></span>
+                  <span class="past-pct">62% off</span>
+                </div>
+              </li>
+              <li class="past-row">
+                <span class="store-badge store-oldnavy" aria-hidden="true">ON</span>
+                <div class="past-main">
+                  <a class="past-title" href="https://oldnavy.gapcanada.ca/browse/product.do?pid=907797003" target="_blank" rel="nofollow sponsored noopener">Water-Resistant Puffer Jacket for Toddler Girls</a>
+                  <span class="past-store">Old Navy Canada</span>
+                </div>
+                <div class="past-prices">
+                  <span class="past-now">$27.49</span>
+                  <span class="past-was">was <s>$54.99</s></span>
+                  <span class="past-pct">50% off</span>
+                </div>
+              </li>
+              <li class="past-row">
+                <span class="store-badge store-gap" aria-hidden="true">GAP</span>
+                <div class="past-main">
+                  <a class="past-title" href="https://www.gapcanada.ca/browse/product.do?pid=445082003" target="_blank" rel="nofollow sponsored noopener">Kids Flare Leggings</a>
+                  <span class="past-store">Gap Canada</span>
+                </div>
+                <div class="past-prices">
+                  <span class="past-now">$13.00</span>
+                  <span class="past-was">was <s>$34.95</s></span>
+                  <span class="past-pct">63% off</span>
+                </div>
+              </li>
+              <li class="past-row">
+                <span class="store-badge store-oldnavy" aria-hidden="true">ON</span>
+                <div class="past-main">
+                  <a class="past-title" href="https://oldnavy.gapcanada.ca/browse/product.do?pid=908756063" target="_blank" rel="nofollow sponsored noopener">Leggings for Girls</a>
+                  <span class="past-store">Old Navy Canada</span>
+                </div>
+                <div class="past-prices">
+                  <span class="past-now">$6.49</span>
+                  <span class="past-was">was <s>$12.99</s></span>
+                  <span class="past-pct">50% off</span>
+                </div>
+              </li>
+            </ul>
+          </section>
           <section class="day" id="day-2026-11-26">
             <h2>Thursday, November 26, 2026 <span class="day-count">21 deals</span></h2>
             <ul class="past-list">
