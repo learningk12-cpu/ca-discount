@@ -349,6 +349,12 @@
       .deal[hidden] { display: none; }
       .empty-msg { display: none; padding: 28px; text-align: center; color: var(--ink-2); font-weight: 600; }
       .empty-msg.show { display: block; }
+      /* Pagination — Page 1 / Page 2 */
+      .pagination { display: flex; gap: 12px; justify-content: center; align-items: center; flex-wrap: wrap; margin: 26px 0 8px; }
+      .pagination a, .pagination span.page-current { border: 1px solid var(--line); border-radius: 999px; padding: 10px 18px; font-weight: 700; font-size: 15px; text-decoration: none; }
+      .pagination a:hover { border-color: var(--ink-2); }
+      .pagination span.page-current { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+
 
       /* Sections */
       section.block { padding: 38px 0 6px; }
@@ -399,6 +405,7 @@
         </a>
         <nav class="header-nav" aria-label="Main">
           <a href="#today">Today's deals</a>
+          <a href="/page-2">Page 2</a>
           <a href="/black-friday">Black Friday</a>
           <a href="#how">How we check</a>
           <a href="#faq">FAQ</a>
@@ -934,6 +941,11 @@
           </div>
           <p class="empty-msg" id="empty-msg">No deals from that store today — try All stores.</p>
         </section>
+        <nav class="pagination" aria-label="Deal pages">
+          <span class="page-current" aria-current="page">Page 1 — Today</span>
+          <a href="/page-2">Page 2 — Yesterday &rarr;</a>
+          <a href="/archive">Past deals (older) &rarr;</a>
+        </nav>
 
         <section class="block" id="how">
           <h2>How every deal is checked</h2>
@@ -1011,6 +1023,7 @@
         <p>CA Discount does not sell products and is not affiliated with Canadian Tire, Walmart, Home Depot, The Children's Place, Old Navy, Gap, or Carter's. Store and product names belong to their owners and are used only to identify the deals.</p>
         <nav class="footer-links" aria-label="Footer">
           <a href="#today">Today's deals</a>
+          <a href="/page-2">Page 2</a>
           <a href="/black-friday">Black Friday</a>
           <a href="#how">How we check</a>
           <a href="#faq">FAQ</a>
