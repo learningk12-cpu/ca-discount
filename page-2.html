@@ -355,6 +355,12 @@
       .pagination a:hover { border-color: var(--ink-2); }
       .pagination span.page-current { background: var(--ink); color: var(--bg); border-color: var(--ink); }
 
+      /* Pagination — Page 1 / Page 2 */
+      .pagination { display: flex; gap: 12px; justify-content: center; align-items: center; flex-wrap: wrap; margin: 26px 0 8px; }
+      .pagination a, .pagination span.page-current { border: 1px solid var(--line); border-radius: 999px; padding: 10px 18px; font-weight: 700; font-size: 15px; text-decoration: none; }
+      .pagination a:hover { border-color: var(--ink-2); }
+      .pagination span.page-current { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+
 
       /* Sections */
       section.block { padding: 38px 0 6px; }
@@ -406,6 +412,7 @@
         <nav class="header-nav" aria-label="Main">
           <a href="/">Today's deals</a>
           <a href="/page-2" aria-current="page">Page 2</a>
+          <a href="/page-2">Page 2</a>
           <a href="/black-friday">Black Friday</a>
           <a href="#how">How we check</a>
           <a href="#faq">FAQ</a>
@@ -942,8 +949,8 @@
           <p class="empty-msg" id="empty-msg">No deals from that store yesterday — try All stores.</p>
         </section>
         <nav class="pagination" aria-label="Deal pages">
-          <a href="/">&larr; Page 1 — Today's deals</a>
-          <span class="page-current" aria-current="page">Page 2 — Yesterday (Nov 26, 2026)</span>
+          <span class="page-current" aria-current="page">Page 1 — Today</span>
+          <a href="/page-2">Page 2 — Yesterday &rarr;</a>
           <a href="/archive">Past deals (older) &rarr;</a>
         </nav>
 
@@ -1024,6 +1031,7 @@
         <nav class="footer-links" aria-label="Footer">
           <a href="/">Today's deals</a>
           <a href="/page-2" aria-current="page">Page 2</a>
+          <a href="/page-2">Page 2</a>
           <a href="/black-friday">Black Friday</a>
           <a href="#how">How we check</a>
           <a href="#faq">FAQ</a>
